@@ -1,0 +1,36 @@
+2020/10/09-19:39:19.690 649 Reusing MANIFEST /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2020/10/09-19:39:19.690 649 Recovering log #24
+2020/10/09-19:39:19.691 649 Reusing old log /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000024.log 
+2020/10/09-19:42:30.845 63d Level-0 table #28: started
+2020/10/09-19:42:30.853 63d Level-0 table #28: 18884 bytes OK
+2020/10/09-19:42:30.858 63d Delete type=0 #24
+2020/10/09-19:42:30.859 662 Compacting 4@0 + 1@1 files
+2020/10/09-19:42:30.869 662 Generated table #29@0: 83 keys, 71983 bytes
+2020/10/09-19:42:30.869 662 Compacted 4@0 + 1@1 files => 71983 bytes
+2020/10/09-19:42:30.873 662 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/10/09-19:42:30.874 662 Delete type=2 #21
+2020/10/09-19:42:30.874 662 Delete type=2 #25
+2020/10/09-19:42:30.874 662 Delete type=2 #18
+2020/10/09-19:42:30.874 662 Delete type=2 #23
+2020/10/09-19:42:30.874 662 Delete type=2 #28
+2020/10/09-19:47:10.397 1142 Level-0 table #31: started
+2020/10/09-19:47:10.410 1142 Level-0 table #31: 63913 bytes OK
+2020/10/09-19:47:10.416 1142 Delete type=0 #27
+2020/10/09-19:50:11.897 fbd Level-0 table #33: started
+2020/10/09-19:50:11.912 fbd Level-0 table #33: 60548 bytes OK
+2020/10/09-19:50:11.918 fbd Delete type=0 #30
+2020/10/09-19:56:27.501 1676 Level-0 table #35: started
+2020/10/09-19:56:27.516 1676 Level-0 table #35: 62935 bytes OK
+2020/10/09-19:56:27.524 1676 Delete type=0 #32
+2020/10/09-20:03:25.425 1cec Level-0 table #37: started
+2020/10/09-20:03:25.443 1cec Level-0 table #37: 64312 bytes OK
+2020/10/09-20:03:25.450 1cec Delete type=0 #34
+2020/10/09-20:03:25.451 2a85 Compacting 4@0 + 1@1 files
+2020/10/09-20:03:25.472 2a85 Generated table #38@0: 103 keys, 72174 bytes
+2020/10/09-20:03:25.472 2a85 Compacted 4@0 + 1@1 files => 72174 bytes
+2020/10/09-20:03:25.477 2a85 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/10/09-20:03:25.478 2a85 Delete type=2 #33
+2020/10/09-20:03:25.478 2a85 Delete type=2 #31
+2020/10/09-20:03:25.478 2a85 Delete type=2 #37
+2020/10/09-20:03:25.478 2a85 Delete type=2 #29
+2020/10/09-20:03:25.479 2a85 Delete type=2 #35
