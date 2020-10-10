@@ -7,6 +7,10 @@ RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
 _launch=Alt+Space\tAlt+F2\tSearch,Alt+Space\tAlt+F2\tSearch,KRunner
 
+[ksmserver]
+Lock Session=Meta+L\tCtrl+Alt+L\tScreensaver,none,Lock Session
+_k_friendly_name=System Settings
+
 [systemsettings.desktop]
 _k_friendly_name=System Settings
 _launch=Tools,Tools,System Settings

@@ -1,6 +1,15 @@
-2020/10/09-20:31:43.885 487f Reusing MANIFEST /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
-2020/10/09-20:31:43.886 487f Recovering log #7
-2020/10/09-20:31:43.886 487f Reusing old log /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Session Storage/000007.log 
-2020/10/09-21:19:34.438 961c Level-0 table #11: started
-2020/10/09-21:19:34.448 961c Level-0 table #11: 20898 bytes OK
-2020/10/09-21:19:34.453 961c Delete type=0 #7
+2020/10/10-17:03:45.366 1592 Reusing MANIFEST /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
+2020/10/10-17:03:45.366 1592 Recovering log #16
+2020/10/10-17:03:45.366 1592 Reusing old log /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Session Storage/000016.log 
+2020/10/10-17:04:03.155 1578 Level-0 table #20: started
+2020/10/10-17:04:03.166 1578 Level-0 table #20: 18381 bytes OK
+2020/10/10-17:04:03.172 1578 Delete type=0 #16
+2020/10/10-17:04:03.173 1579 Compacting 4@0 + 1@1 files
+2020/10/10-17:04:03.182 1579 Generated table #21@0: 673 keys, 11528 bytes
+2020/10/10-17:04:03.182 1579 Compacted 4@0 + 1@1 files => 11528 bytes
+2020/10/10-17:04:03.186 1579 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/10/10-17:04:03.187 1579 Delete type=2 #20
+2020/10/10-17:04:03.187 1579 Delete type=2 #11
+2020/10/10-17:04:03.188 1579 Delete type=2 #14
+2020/10/10-17:04:03.188 1579 Delete type=2 #8
+2020/10/10-17:04:03.188 1579 Delete type=2 #17

@@ -110,7 +110,7 @@ font-6 = Inconsolata:bold:size=10;1.5
 ;   modules-left = cpu ram
 ;   modules-center = xwindow xbacklight
 ;   modules-right = ipc clock
-modules-left = i3 poweroff sep sleep sep office sep notion sep epiphany sep file sep network wireless-network
+modules-left = i3 poweroff sep sleep sep office sep notion sep epiphany sep file sep wireless-network
 modules-center = date
 modules-right = backlight sep memory sep alsa sep cpu sep temperature sep battery 
 
@@ -390,7 +390,7 @@ format-charging = <animation-charging> <label-charging>
 ;   <bar-capacity>
 ;   <ramp-capacity>
 ;   <animation-discharging>
-format-discharging = <ramp-capacity> <label-discharging>
+format-discharging = %{A1:gnome-power-statistics:}<ramp-capacity> <label-discharging>%{A}
 
 ; Available tags:
 ;   <label-full> (default)
@@ -411,7 +411,7 @@ label-charging-foreground = #EBB471
 ;   %percentage_raw%
 ;   %time%
 ;   %consumption% (shows current discharge rate in watts)
-label-discharging = Discharging %percentage%%
+label-discharging = %percentage%%
 label-discharging-foreground = #EBB471
 
 ; Available tokens:
@@ -450,6 +450,9 @@ animation-discharging-4 = 
 ; Framerate in milliseconds
 animation-discharging-framerate = 500
 animation-discharging-foreground = #EBB471
+
+click-left = gnome-power-statistics
+click-right = powerdevil
 
 [module/i3]
 type = internal/i3
@@ -538,15 +541,16 @@ click-right = termite -e nmtui
 [module/wireless-network]
 type = internal/network
 interface = wlan0
-click-left = networkmanager
+format = %{A1:networkmanager_dmenu:}%{A}
 
 label-connected = %essid%
-format-connected = <ramp-signal>
+format-connected = %{A1:networkmanager_dmenu:}<ramp-signal>%{A}
 label-connected-foreground = #82B414
 
-format-disconnected = <label-disconnected>
+format-disconnected-foreground = #BF616A
+format-disconnected = %{A1:networkmanager_dmenu:}睊 <label-disconnected>%{A}
 label-disconnected = Not connected
-label-disconnected-foreground = #BF616A
+#label-disconnected-foreground = #BF616A
 
 ramp-signal-foreground = #82B414
 ramp-signal-0 = 

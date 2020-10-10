@@ -22,6 +22,7 @@
 ; (gtk_accel_path "<Actions>/ThunarStandardView/back" "<Alt>Left")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/setup-columns" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/sendto-menu" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/f007c5a5b75b3828fe3ae8407114307a" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/delete" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/select-by-pattern" "<Primary>s")
 ; (gtk_accel_path "<Actions>/ThunarWindow/close-tab" "<Primary>w")

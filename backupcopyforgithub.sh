@@ -5,7 +5,7 @@ cp .bashrc  archcrafti3dotfiles
 cp .xinitrc archcrafti3dotfiles
 cp .Xresources archcrafti3dotfiles
 cp .zshrc archcrafti3dotfiles
-cp backupcopyforgithub.sh   archcrafti3dotfiles
-cp ~/Pictures/ -r archcrafti3dotfiles
-cp /usr/share/fonts/ -r archcrafti3dotfiles
+cp /usr/lib/systemd/system/lock@.service archcrafti3dotfiles
+cp /usr/share/fonts/TTF/fontello.ttf archcrafti3dotfiles
 cp ~/.oh-my-zsh/ -r archcrafti3dotfiles
+cp backupcopyforgithub.sh   archcrafti3dotfiles

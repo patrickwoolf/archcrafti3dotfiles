@@ -1,27 +1,6 @@
-2020/10/09-20:31:43.748 4866 Reusing MANIFEST /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2020/10/09-20:31:43.750 4866 Recovering log #36
-2020/10/09-20:31:43.750 4866 Reusing old log /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000036.log 
-2020/10/09-20:32:48.393 487f Level-0 table #41: started
-2020/10/09-20:32:48.405 487f Level-0 table #41: 65387 bytes OK
-2020/10/09-20:32:48.411 487f Delete type=0 #36
-2020/10/09-21:10:02.816 815b Level-0 table #43: started
-2020/10/09-21:10:02.827 815b Level-0 table #43: 63301 bytes OK
-2020/10/09-21:10:02.831 815b Delete type=0 #40
-2020/10/09-21:10:48.144 815b Level-0 table #45: started
-2020/10/09-21:10:48.153 815b Level-0 table #45: 60480 bytes OK
-2020/10/09-21:10:48.160 815b Delete type=0 #42
-2020/10/09-21:24:14.730 9fdb Level-0 table #47: started
-2020/10/09-21:24:14.743 9fdb Level-0 table #47: 21873 bytes OK
-2020/10/09-21:24:14.749 9fdb Delete type=0 #44
-2020/10/09-21:24:14.749 961c Compacting 4@0 + 1@1 files
-2020/10/09-21:24:14.765 961c Generated table #48@0: 160 keys, 80730 bytes
-2020/10/09-21:24:14.765 961c Compacted 4@0 + 1@1 files => 80730 bytes
-2020/10/09-21:24:14.770 961c compacted to: files[ 0 1 1 0 0 0 0 ]
-2020/10/09-21:24:14.771 961c Delete type=2 #45
-2020/10/09-21:24:14.771 961c Delete type=2 #41
-2020/10/09-21:24:14.771 961c Delete type=2 #38
-2020/10/09-21:24:14.771 961c Delete type=2 #43
-2020/10/09-21:24:14.771 961c Delete type=2 #47
-2020/10/09-21:52:13.549 b822 Level-0 table #50: started
-2020/10/09-21:52:13.560 b822 Level-0 table #50: 75251 bytes OK
-2020/10/09-21:52:13.565 b822 Delete type=0 #46
+2020/10/10-17:03:45.341 1582 Reusing MANIFEST /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2020/10/10-17:03:45.342 1582 Recovering log #57
+2020/10/10-17:03:45.342 1582 Reusing old log /home/patrick/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000057.log 
+2020/10/10-17:04:58.182 1578 Level-0 table #62: started
+2020/10/10-17:04:58.196 1578 Level-0 table #62: 72793 bytes OK
+2020/10/10-17:04:58.201 1578 Delete type=0 #57

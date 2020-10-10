@@ -8,6 +8,8 @@ image/svg+xml=viewnior.desktop;
 font/ttf=geany.desktop;
 font/woff=geany.desktop;
 video/mp4=vlc.desktop;mplayer.desktop;
+application/x-desktop=geany.desktop;
+text/x-systemd-unit=vim.desktop;
 
 [Default Applications]
 image/gif=viewnior.desktop
