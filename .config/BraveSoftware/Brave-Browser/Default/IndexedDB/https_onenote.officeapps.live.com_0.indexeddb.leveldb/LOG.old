@@ -1,5 +1,0 @@
-2020/10/09-21:19:37.772 8f53 Reusing MANIFEST /home/patrick/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_onenote.officeapps.live.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/10/09-21:20:59.329 961c Level-0 table #5: started
-2020/10/09-21:20:59.350 961c Level-0 table #5: 334102 bytes OK
-2020/10/09-21:20:59.356 961c Delete type=0 #3
-2020/10/09-21:20:59.357 961c Manual compaction at level-0 from (begin) .. (end); will stop at (end)
