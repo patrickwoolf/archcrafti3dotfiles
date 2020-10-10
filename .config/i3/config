@@ -215,8 +215,7 @@ bindsym $mod+z mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always xrandr -s 1920x1080
 #exec_always feh --bg-fill $HOME/Downloads/dawn-3358468.jpg
-#exec_always wal -i $HOME/Downloads/Tales-1.jpg
-exec_always wal --iterative -i $HOME/Pictures/
+exec_always wal --iterative -i $HOME/Pictures/Wallpapers/
 #exec xscreensaver -no-splash
 exec_always compton -b --config ~/.config/.compton.conf
 

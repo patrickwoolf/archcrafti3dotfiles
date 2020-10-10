@@ -9,3 +9,6 @@ cp /usr/lib/systemd/system/lock@.service archcrafti3dotfiles
 cp /usr/share/fonts/TTF/fontello.ttf archcrafti3dotfiles
 cp ~/.oh-my-zsh/ -r archcrafti3dotfiles
 cp backupcopyforgithub.sh   archcrafti3dotfiles
+rm ~/.config/BraveSoftware -rf
+rm ~/.config/midori -rf
+rm ~/.config/Thunar -rf
