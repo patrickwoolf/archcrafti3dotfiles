@@ -1,0 +1,3 @@
+[History]
+Directories[$e]=file:///home/,file:$HOME,file:///,file:$HOME,file:$HOME,file:///usr,lib,file:///home,file:///etc,file:///var,file:///mnt
+Patterns[$e]=*oh-my*,*oh-my,*oh-my-zsh,oh-my-zsh,*,bin

@@ -8,3 +8,4 @@ cp .zshrc archcrafti3dotfiles
 cp backupcopyforgithub.sh   archcrafti3dotfiles
 cp ~/Pictures/ -r archcrafti3dotfiles
 cp /usr/share/fonts/ -r archcrafti3dotfiles
+cp ~/.oh-my-zsh/ -r archcrafti3dotfiles
