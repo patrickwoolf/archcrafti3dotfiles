@@ -32,7 +32,7 @@ exec_always ibus-daemon -drx
 
 # Menu
 bindsym $mod+d exec rofi -theme gruvbox-dark -lines 10 -padding 18 -width 60 -location 0 -show drun -sidebar-mode
-bindsym --release Super_L exec "rofi -theme gruvbox-dark -combi-modi drun,window -show combi -modi combi"
+bindsym --release Super_L exec "rofi -theme gruvbox-dark -combi-modi drun,window,run -show combi -modi combi"
 bindsym $mod+A exec rofi -theme gruvbox-dark -lines 10 -padding 18 -width 60 -location 0 -show window
 
 # Power menu
@@ -41,6 +41,9 @@ bindsym $mod+X exec ~/.config/rofi/bin/powermenu
 
 # Suspend
 bindsym XF86PowerOff exec suspend
+
+# System Monitor
+bindsym control+Escape exec "termite -e htop"
 
 # Sound
 ## card 0, PCM
@@ -55,6 +58,8 @@ bindsym control+XF86AudioLowerVolume exec "amixer -q set Master,0 1%-"
 bindsym XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
+# SimpleScreenRecorder
+bindsym $mod+Ctrl+R exec simplescreenrecorder --start-hidden --start-recording
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.

@@ -10,7 +10,9 @@ font/woff=geany.desktop;
 video/mp4=vlc.desktop;mplayer.desktop;
 application/x-desktop=geany.desktop;
 text/x-systemd-unit=vim.desktop;
+video/x-matroska=vlc.desktop;
 
 [Default Applications]
 image/gif=viewnior.desktop
 image/svg+xml=viewnior.desktop
+video/x-matroska=vlc.desktop
