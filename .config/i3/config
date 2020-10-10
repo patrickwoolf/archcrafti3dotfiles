@@ -43,9 +43,13 @@ bindsym $mod+X exec ~/.config/rofi/bin/powermenu
 bindsym XF86PowerOff exec suspend
 
 # Sound
+## card 0, PCM
 bindsym XF86AudioRaiseVolume exec "amixer -q set -c0 PCM,0 1%+ unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q set -c0 PCM,0 1%- unmute"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+## Master / card 0 Speaker
+bindsym XF86AudioMute exec "amixer -q set Master,0 toggle"
+bindsym control+XF86AudioRaiseVolume exec "amixer -q set Master,0 1%+"
+bindsym control+XF86AudioLowerVolume exec "amixer -q set Master,0 1%-"
 
 # Backlight
 bindsym XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
@@ -162,16 +166,16 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
 # move focused container to workspace
-bindsym $mod+Ctrl+1 move container to workspace $ws1
-bindsym $mod+Ctrl+2 move container to workspace $ws2
-bindsym $mod+Ctrl+3 move container to workspace $ws3
-bindsym $mod+Ctrl+4 move container to workspace $ws4
-bindsym $mod+Ctrl+5 move container to workspace $ws5
-bindsym $mod+Ctrl+6 move container to workspace $ws6
-bindsym $mod+Ctrl+7 move container to workspace $ws7
-bindsym $mod+Ctrl+8 move container to workspace $ws8
-bindsym $mod+Ctrl+9 move container to workspace $ws9
-bindsym $mod+Ctrl+0 move container to workspace $ws10
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
 
 # reload the configuration file
 bindsym $mod+Ctrl+r reload
