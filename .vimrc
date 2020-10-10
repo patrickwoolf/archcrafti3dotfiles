@@ -31,6 +31,7 @@ set statusline=%1*\ file\ %3*\ %f\ %4*\
 set statusline+=%=\ 
 set statusline+=%3*\ %l\ of\ %L\ %2*\ line\ 
 set scrolloff=8
+set mouse=a
 nmap <C-S> :w<CR>
 nmap <C-_> :noh<CR>
 nmap <S-Left> v<Left>

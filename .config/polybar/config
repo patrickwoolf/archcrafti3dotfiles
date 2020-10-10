@@ -94,20 +94,25 @@ module-margin = 1
 ;   font-2 = Termsynu:size=8;-1
 ;   font-3 = FontAwesome:size=10
 ; See the Fonts wiki page for more details
-font-0 = Inconsolata:bold:size=10;1.5
-font-1 = FontAwesome5Free:style=Solid:size=10;0.5
-font-2 = FontAwesome5Free:style=Regular:size=10;0.5
-font-3 = FontAwesome5Brands:style=Regular:size=10;0.5
-font-4 = FontAwesome5Brands:style=Duotone:size=10;0.5
-font-5 = FontAwesome5Free:style=Duotone:size=10;0.5
+
+font-0 = "Iosevka Nerd Font:size=10;0.5"
+#font-1 = "Iosevka Nerd Font:size=12;3"
+#font-2 = "Iosevka Nerd Font:size=20;5"
+#font-0 = FontAwesome5Free:style=Solid:size=10;0.5
+font-1 = FontAwesome5Free:style=Regular:size=10;0.5
+font-2 = FontAwesome5Brands:style=Regular:size=10;0.5
+font-3 = FontAwesome5Brands:style=Duotone:size=10;0.5
+font-4 = FontAwesome5Free:style=Duotone:size=10;0.5
+font-5 = fontello:size=10
+font-6 = Inconsolata:bold:size=10;1.5
 
 ; Modules are added to one of the available blocks
 ;   modules-left = cpu ram
 ;   modules-center = xwindow xbacklight
 ;   modules-right = ipc clock
-modules-left = i3 poweroff sep sleep sep firefox sep epiphany sep file sep spotify
+modules-left = i3 poweroff sep sleep sep office sep notion sep epiphany sep file sep network wireless-network
 modules-center = date
-modules-right = network wireless-network sep memory sep alsa sep cpu sep battery 
+modules-right = backlight sep memory sep alsa sep cpu sep temperature sep battery 
 
 ; The separator will be inserted between the output of each module
 separator =
@@ -195,28 +200,29 @@ enable-ipc = false
 type = custom/script
 interval = 0.5
 exec = echo ""
-format = ""
 format-foreground = #7BA23F
 click-left = spotify
 
-[module/firefox]
+[module/office]
 type = custom/script
-exec = echo ""
-format = ""
+exec = echo ""
 format-foreground = #CB4042
-click-left = firefox
+click-left = brave-beta --new-window "https://onedrive.live.com/redir?resid=B8E5FCB9344C582C%21107&page=Edit&wd=target%28%E5%BF%AB%E9%80%9F%E7%AD%86%E8%A8%98.one%7Cf70ff7ee-a6cc-4e4e-8f1c-512f1a64348f%2FOneNote%20%E5%AD%98%E6%94%BE%E6%82%A8%E6%89%80%E6%9C%89%E7%AD%86%E8%A8%98%E7%9A%84%E5%9C%B0%E6%96%B9%7C3ddd154f-0d0e-44da-855c-88c0e9abcf88%2F%29"
 
 [module/epiphany]
 type = custom/script
 exec = echo ""
-format = ""
 format-foreground = #CD5842
-click-left = epiphany
+click-left = brave-beta
+
+[module/notion]
+type = custom/script
+exec = echo ""
+click-left = brave-beta --new-window "notion.so"
 
 [module/file]
 type = custom/script
 exec = echo ""
-format = ""
 format-foreground =  #D79485 
 click-left = thunar
 
@@ -245,21 +251,60 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = #fff
 
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/backlight]
+type = internal/xbacklight
+
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+
+; Available tags:
+;   <label> (default)
+;   <ramp>
+;   <bar>
+format = <ramp> <label>
+format-background = 
+format-foreground = #F19483
+
+; Available tokens:
+;   %percentage% (default)
+label = %percentage%%
+
+; Only applies if <ramp> is used
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-5 = 
+ramp-6 = 
+ramp-7 = 
+ramp-8 = 
+ramp-9 = 
+ramp-font = 2
+#ramp-foreground = #808800
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
 [module/poweroff]
 type = custom/script
 exec = echo ""
-format = ""
 format-foreground = #ffffff
 #click-left = systemctl poweroff
 click-left = .config/rofi/bin/powermenu
 
 [module/sleep]
 type = custom/script
-exec = echo ""
-format = ""
+#exec = echo ""
+exec = echo ""
 format-foreground = #FAD689
 click-right = sflock
-click-left = xscreensaver-command -lock
+#click-left = xscreensaver-command -lock
+click-left = "sh ~/.i3/lock.sh"
 
 [module/menu-apps]
 type = custom/menu
@@ -487,8 +532,8 @@ exec = echo ""
 format = ""
 format-foreground = #82B420
 #click-left = nm-connection-editor
-click-right = networkmanager_dmenu
-click-left = termite -e nmtui
+click-left = networkmanager_dmenu
+click-right = termite -e nmtui
 
 [module/wireless-network]
 type = internal/network
@@ -559,7 +604,7 @@ type = internal/temperature
 
 ; Seconds to sleep between updates
 ; Default: 1
-interval = 0.5
+interval = 2.0
 
 ; Thermal zone to use
 ; To list all the zone types, run 

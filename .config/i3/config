@@ -36,11 +36,16 @@ bindsym --release Super_L exec rofi -theme Monokai -lines 10 -padding 18 -width 
 
 # Power menu
 bindsym $mod+shift+L exec "i3lock -i ~/Pictures/"
+bindsym $mod+X exec ~/.config/rofi/bin/powermenu
 
 # Sound
 bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 2%+ unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 5%- unmute"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+
+# Backlight
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 1 # decrease screen brightness
 
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -163,7 +168,7 @@ bindsym $mod+Ctrl+9 move container to workspace $ws9
 bindsym $mod+Ctrl+0 move container to workspace $ws10
 
 # reload the configuration file
-bindsym $mod+Ctrl+c reload
+bindsym $mod+Ctrl+r reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+r restart
 # exit i3 (logs you out of your X session)

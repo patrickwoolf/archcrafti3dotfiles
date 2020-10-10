@@ -68,7 +68,8 @@ case $chosen in
         ;;
     $lock)
         #betterlockscreen --lock
-        i3lock -i ./Pictures/zhaohua.jpeg 
+        #i3lock -i ./Pictures/zhaohua.jpeg 
+        sh ~/.i3/lock.sh
         ;;
     $suspend)
 		ans=$(rdialog &)
