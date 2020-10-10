@@ -43,8 +43,8 @@ bindsym $mod+X exec ~/.config/rofi/bin/powermenu
 bindsym XF86PowerOff exec suspend
 
 # Sound
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 2%+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 5%- unmute"
+bindsym XF86AudioRaiseVolume exec "amixer -q set -c0 PCM,0 1%+ unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q set -c0 PCM,0 1%- unmute"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 # Backlight

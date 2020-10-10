@@ -1,3 +1,7 @@
-2020/10/09-14:26:36.698 ccc Reusing MANIFEST /home/patrick/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/10/09-14:26:36.698 ccc Recovering log #3
-2020/10/09-14:26:36.698 ccc Reusing old log /home/patrick/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2020/10/09-19:43:41.077 de5 Reusing MANIFEST /home/patrick/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/10/09-19:43:41.077 de5 Recovering log #3
+2020/10/09-19:43:41.078 de5 Reusing old log /home/patrick/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2020/10/09-20:03:35.781 2a85 Level-0 table #5: started
+2020/10/09-20:03:35.794 2a85 Level-0 table #5: 3397 bytes OK
+2020/10/09-20:03:35.800 2a85 Delete type=0 #3
+2020/10/09-20:03:35.801 2a85 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

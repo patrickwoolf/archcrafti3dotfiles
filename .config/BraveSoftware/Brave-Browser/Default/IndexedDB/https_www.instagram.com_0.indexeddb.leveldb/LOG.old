@@ -1,0 +1,5 @@
+2020/10/11-00:03:28.147 50fe Reusing MANIFEST /home/patrick/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/10/11-00:03:46.606 5c78 Level-0 table #5: started
+2020/10/11-00:03:46.611 5c78 Level-0 table #5: 802 bytes OK
+2020/10/11-00:03:46.620 5c78 Delete type=0 #3
+2020/10/11-00:03:46.621 5c78 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -5,7 +5,7 @@
     <property name="RightHanded" type="bool" value="true"/>
     <property name="ReverseScrolling" type="bool" value="false"/>
     <property name="Threshold" type="int" value="1"/>
-    <property name="Acceleration" type="double" value="5.000000"/>
+    <property name="Acceleration" type="double" value="9.000000"/>
   </property>
   <property name="ELAN130000_04F33059_Touchpad" type="empty">
     <property name="Properties" type="empty">
@@ -14,6 +14,6 @@
     <property name="RightHanded" type="bool" value="true"/>
     <property name="ReverseScrolling" type="bool" value="true"/>
     <property name="Threshold" type="int" value="1"/>
-    <property name="Acceleration" type="double" value="5.000000"/>
+    <property name="Acceleration" type="double" value="8.000000"/>
   </property>
 </channel>
