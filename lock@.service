@@ -1,7 +1,8 @@
 #/usr/lib/systemd/system/lock@.service
 [Unit]
 Description=Run user script after suspend
-#Before=sleep.target
+Before=suspend.target
+Before=sleep.target
 
 [Service]
 User=%I

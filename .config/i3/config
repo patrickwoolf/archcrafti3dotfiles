@@ -36,7 +36,7 @@ bindsym --release Super_L exec "rofi -theme gruvbox-dark -combi-modi drun,window
 bindsym $mod+A exec rofi -theme gruvbox-dark -lines 10 -padding 18 -width 60 -location 0 -show window
 
 # Power menu
-bindsym $mod+shift+L exec "i3lock -i ~/Pictures/"
+bindsym $mod+shift+L exec "i3lock -i ~/Pictures/Wallpapers/"
 bindsym $mod+X exec ~/.config/rofi/bin/powermenu
 
 # Suspend
@@ -125,8 +125,14 @@ bindsym $mod+h split h
 # split in vertical orientation
 bindsym $mod+v split v
 
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+# enter fullscreen mode for the focused container and hide polybar
+bindsym $mod+f "fullscreen toggle; exec polybar-msg cmd toggle"
+## Also can hide polybar like this
+# Hide
+; xdotool search --class Polybar windowunmap %@
+# Unhide and raise to the top
+; xdotool search --class Polybar windowmap %@ windowraise %@
+
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -140,7 +146,7 @@ bindsym $mod+Ctrl+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -183,7 +189,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # reload the configuration file
-bindsym $mod+Ctrl+r reload
+bindsym $mod+Shift+r reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+r restart
 # exit i3 (logs you out of your X session)
@@ -217,9 +223,8 @@ mode "resize" {
 bindsym $mod+z mode "resize"
 
 # execute polybar, size, and wallpaper.
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id "pkill -HUP polybar ; $HOME/.config/polybar/launch.sh"
 exec_always xrandr -s 1920x1080
-#exec_always feh --bg-fill $HOME/Downloads/dawn-3358468.jpg
 exec_always wal --iterative -i $HOME/Pictures/Wallpapers/
 #exec xscreensaver -no-splash
 exec_always compton -b --config ~/.config/.compton.conf

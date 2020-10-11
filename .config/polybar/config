@@ -112,7 +112,7 @@ font-6 = Inconsolata:bold:size=10;1.5
 ;   modules-right = ipc clock
 modules-left = i3 poweroff sep sleep sep office sep notion sep epiphany sep file sep wireless-network
 modules-center = date
-modules-right = backlight sep memory sep alsa sep cpu sep temperature sep battery 
+modules-right = backlight sep alsa sep memory sep cpu sep temperature sep battery 
 
 ; The separator will be inserted between the output of each module
 separator =
@@ -182,6 +182,7 @@ tray-scale = 1.0
 ;   i3 (requires: `override-redirect = true`)
 ; wm-restack =
 
+
 ; Set a DPI values used when rendering text
 ; This only affects scalable fonts
 ; Set this to 0 to let polybar calculate the dpi from the screen size.
@@ -191,7 +192,7 @@ dpi-y = 96
 
 ; Enable support for inter-process messaging
 ; See the Messaging wiki page for more details.
-enable-ipc = false
+enable-ipc = true
 
 ; Fallback click handlers that will be called if
 ; there's no matching module handler found.
@@ -224,34 +225,122 @@ click-left = brave-beta --new-window "notion.so"
 type = custom/script
 exec = echo ""
 format-foreground =  #D79485 
-click-left = thunar
+click-left = pcmanfm
 
 [module/alsa]
-type = internal/pulseaudio
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = #ffffff
-format-muted-prefix = " "
-format-muted-foreground = #ffffff
-label-muted = sound muted
-bar-volume-width = 10
-bar-volume-foreground-0 = #fff
-bar-volume-foreground-1 = #fff
-bar-volume-foreground-2 = #fff
-bar-volume-foreground-3 = #fff
-bar-volume-foreground-4 = #fff
-bar-volume-foreground-5 = #fff
-bar-volume-foreground-6 = #fff
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = #fff
+type = internal/alsa
+
+; Soundcard to be used
+; Usually in the format hw:# where # is the card number
+; You can find the different card numbers in `/proc/asound/cards`
+;;master-soundcard = default
+;;speaker-soundcard = default
+;;headphone-soundcard = default
+
+; Name of the master, speaker and headphone mixers
+; Use the following command to list available mixer controls:
+; $ amixer scontrols | sed -nr "s/.*'([[:alnum:]]+)'.*/\1/p"
+; If master, speaker or headphone-soundcard isn't the default, 
+; use `amixer -c # scontrols` instead where # is the number 
+; of the master, speaker or headphone soundcard respectively
+;
+; Default: Master
+;;master-mixer = Master
+
+; Optionally define speaker and headphone mixers
+; Default: none
+;;speaker-mixer = Speaker
+; Default: none
+;;headphone-mixer = Headphone
+
+; NOTE: This is required if headphone_mixer is defined
+; Use the following command to list available device controls
+; $ amixer controls | sed -r "/CARD/\!d; s/.*=([0-9]+).*name='([^']+)'.*/printf '%3.0f: %s\n' '\1' '\2'/e" | sort
+; You may also need to use `amixer -c # controls` as above for the mixer names
+; Default: none
+;;headphone-id = 9
+
+; Use volume mapping (similar to amixer -M and alsamixer), where the increase in volume is linear to the ear
+; Default: false
+;;mapped = true
+
+; Interval for volume increase/decrease (in percent points)
+; Default: 5
+;;interval = 5
+
+; Available tags:
+;   <label-volume> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-volume = <ramp-volume> <label-volume>
+format-volume-background = 
+
+; Available tags:
+;   <label-muted> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-muted = <label-muted>
+format-muted-prefix = 婢
+format-muted-prefix-font = 2
+format-muted-background = 
+
+; Available tokens:
+;   %percentage% (default)
+label-volume = %percentage%%
+
+; Available tokens:
+;   %percentage% (default
+label-muted = " Mute"
+
+; Only applies if <ramp-volume> is used
+ramp-volume-0 = 奄
+ramp-volume-1 = 奄
+ramp-volume-2 = 奄
+ramp-volume-3 = 奔
+ramp-volume-4 = 奔
+ramp-volume-5 = 奔
+ramp-volume-6 = 墳
+ramp-volume-7 = 墳
+ramp-volume-8 = 墳
+ramp-volume-9 = 墳
+ramp-volume-foreground = #ffffff
+ramp-volume-font = 2
+
+; If defined, it will replace <ramp-volume> when
+; headphones are plugged in to `headphone_control_numid`
+; If undefined, <ramp-volume> will be used for both
+; Only applies if <ramp-volume> is used
+ramp-headphones-0 = 
+ramp-headphones-1 = 
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+#[module/alsa]
+#type = internal/pulseaudio
+#format-volume = <label-volume> <bar-volume>
+#label-volume = VOL
+#label-volume-foreground = #ffffff
+#format-muted-prefix = " "
+#format-muted-foreground = #ffffff
+#label-muted = sound muted
+#bar-volume-width = 10
+#bar-volume-foreground-0 = #fff
+#bar-volume-foreground-1 = #fff
+#bar-volume-foreground-2 = #fff
+#bar-volume-foreground-3 = #fff
+#bar-volume-foreground-4 = #fff
+#bar-volume-foreground-5 = #fff
+#bar-volume-foreground-6 = #fff
+#bar-volume-gradient = false
+#bar-volume-indicator = |
+#bar-volume-indicator-font = 2
+#bar-volume-fill = ─
+#bar-volume-fill-font = 2
+#bar-volume-empty = ─
+#bar-volume-empty-font = 2
+#bar-volume-empty-foreground = #fff
+#
+#;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/backlight]
 type = internal/xbacklight
@@ -541,14 +630,14 @@ click-right = termite -e nmtui
 [module/wireless-network]
 type = internal/network
 interface = wlan0
-format = %{A1:networkmanager_dmenu:}%{A}
+#format = %{A1:networkmanager_dmenu:}%{A2:termite -e nmtui:}<format>%{A}%{A}
 
 label-connected = %essid%
-format-connected = %{A1:networkmanager_dmenu:}<ramp-signal>%{A}
+format-connected = %{A1:networkmanager_dmenu:}%{A3:termite -e nmtui:}<ramp-signal>%{A}%{A}
 label-connected-foreground = #82B414
 
 format-disconnected-foreground = #BF616A
-format-disconnected = %{A1:networkmanager_dmenu:}睊 <label-disconnected>%{A}
+format-disconnected = %{A1:networkmanager_dmenu:}%{A3:termite -e nmtui:}睊 <label-disconnected>%{A}%{A}
 label-disconnected = Not connected
 #label-disconnected-foreground = #BF616A
 
