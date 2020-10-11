@@ -114,6 +114,10 @@ bindsym $mod+Ctrl+k move down
 bindsym $mod+Ctrl+l move up
 bindsym $mod+Ctrl+semicolon move right
 
+# move window to scratchpad / hide / show
+bindsym $mod+Ctrl+h move scratchpad
+bindsym $mod+Ctrl+s scratchpad show
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Ctrl+Left move left
 bindsym $mod+Ctrl+Down move down
