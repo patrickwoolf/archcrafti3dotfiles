@@ -6,7 +6,9 @@ cp .xinitrc archcrafti3dotfiles
 cp .Xresources archcrafti3dotfiles
 cp .zshrc archcrafti3dotfiles
 cp /usr/lib/systemd/system/lock@.service archcrafti3dotfiles
-cp /usr/share/fonts/TTF/fontello.ttf archcrafti3dotfiles
+cp /usr/share/fonts/TTF/fontello.ttf archcrafti3dotfiles/fonts/
+cp /usr/share/themes/Arc* archcrafti3dotfiles/themes/ -r
+cp /usr/share/fonts/icons/iosevka-nerd-font.ttf archcrafti3dotfiles/fonts/
 cp ~/.oh-my-zsh/ -r archcrafti3dotfiles
 cp /etc/systemd/logind.conf archcrafti3dotfiles
 cp setup.sh archcrafti3dotfiles

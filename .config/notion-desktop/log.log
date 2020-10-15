@@ -1,0 +1,551 @@
+[2020-10-13 23:40:55.815] [info] Checking for update
+[2020-10-13 23:40:55.895] [info] Error reading /home/patrick/.config/notion-desktop/cookies.json Error: /home/patrick/.config/notion-desktop/cookies.json: ENOENT: no such file or directory, open '/home/patrick/.config/notion-desktop/cookies.json'
+    at Object.openSync (fs.js:447:3)
+    at Object.func (electron/js2c/asar.js:138:31)
+    at Object.func [as openSync] (electron/js2c/asar.js:138:31)
+    at Object.readFileSync (fs.js:349:35)
+    at Object.fs.readFileSync (electron/js2c/asar.js:580:40)
+    at Object.fs.readFileSync (electron/js2c/asar.js:580:40)
+    at Object.readFileSync (/usr/lib/notion-desktop/resources/app/node_modules/jsonfile/index.js:61:22)
+    at JsonStore.loadSync (/usr/lib/notion-desktop/resources/app/main/JsonStore.js:92:28)
+    at new JsonStore (/usr/lib/notion-desktop/resources/app/main/JsonStore.js:46:14)
+    at Object.<anonymous> (/usr/lib/notion-desktop/resources/app/main/CookieStore.js:53:23)
+[2020-10-13 23:40:56.149] [info] Error reading /home/patrick/.config/notion-desktop/assets.json Error: ENOENT: no such file or directory, open '/home/patrick/.config/notion-desktop/assets.json'
+[2020-10-13 23:40:56.149] [error] Error: Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'
+[2020-10-13 23:40:56.152] [info] {
+  level: 'error',
+  from: 'autoUpdater',
+  type: 'unknownAutoUpdaterError',
+  error: [Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'] {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/usr/lib/notion-desktop/resources/app-update.yml'
+  }
+}
+[2020-10-13 23:40:56.161] [info] Error reading /home/patrick/.config/notion-desktop/headers.json Error: ENOENT: no such file or directory, open '/home/patrick/.config/notion-desktop/headers.json'
+[2020-10-13 23:40:56.161] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'loadJson',
+  data: { time: 49 }
+}
+[2020-10-13 23:40:56.162] [info] Error reading /home/patrick/.config/notion-desktop/assets.json Error: ENOENT: no such file or directory, open '/home/patrick/.config/notion-desktop/assets.json'
+[2020-10-13 23:40:56.163] [info] Error reading /home/patrick/.config/notion-desktop/headers.json Error: ENOENT: no such file or directory, open '/home/patrick/.config/notion-desktop/headers.json'
+[2020-10-13 23:40:56.163] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'verifyCache',
+  data: { time: 1 }
+}
+[2020-10-13 23:40:56.163] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'assetCacheInitialize',
+  data: { time: 51 }
+}
+[2020-10-13 23:41:01.489] [info] Checking for update
+[2020-10-13 23:41:01.756] [info] Error reading /home/patrick/.config/notion-desktop/assets.json Error: ENOENT: no such file or directory, open '/home/patrick/.config/notion-desktop/assets.json'
+[2020-10-13 23:41:01.757] [error] Error: Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'
+[2020-10-13 23:41:01.760] [info] {
+  level: 'error',
+  from: 'autoUpdater',
+  type: 'unknownAutoUpdaterError',
+  error: [Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'] {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/usr/lib/notion-desktop/resources/app-update.yml'
+  }
+}
+[2020-10-13 23:41:01.769] [info] Error reading /home/patrick/.config/notion-desktop/headers.json Error: ENOENT: no such file or directory, open '/home/patrick/.config/notion-desktop/headers.json'
+[2020-10-13 23:41:01.769] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'loadJson',
+  data: { time: 54 }
+}
+[2020-10-13 23:41:01.770] [info] Error reading /home/patrick/.config/notion-desktop/assets.json Error: ENOENT: no such file or directory, open '/home/patrick/.config/notion-desktop/assets.json'
+[2020-10-13 23:41:01.770] [info] Error reading /home/patrick/.config/notion-desktop/headers.json Error: ENOENT: no such file or directory, open '/home/patrick/.config/notion-desktop/headers.json'
+[2020-10-13 23:41:01.771] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'verifyCache',
+  data: { time: 1 }
+}
+[2020-10-13 23:41:01.771] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'assetCacheInitialize',
+  data: { time: 56 }
+}
+[2020-10-13 23:41:11.542] [info] Checking for app update
+[2020-10-13 23:41:11.910] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 366 }
+}
+[2020-10-13 23:41:12.266] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 352 }
+}
+[2020-10-13 23:41:12.281] [info] App update available 23.3.21
+[2020-10-13 23:41:12.323] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'assetJson',
+  data: { time: 55 }
+}
+[2020-10-13 23:41:15.723] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'prepare',
+  data: { time: 3395 }
+}
+[2020-10-13 23:41:15.727] [info] App update download complete 23.3.21
+[2020-10-13 23:41:15.728] [info] Installing app update 23.3.21
+[2020-10-13 23:41:15.739] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'download',
+  data: { time: 12 }
+}
+[2020-10-13 23:41:15.740] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'checkForUpdatesNow',
+  data: { time: 4198 }
+}
+[2020-10-13 23:42:15.745] [info] Checking for app update
+[2020-10-13 23:42:16.137] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 385 }
+}
+[2020-10-13 23:42:16.502] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 361 }
+}
+[2020-10-13 23:42:16.503] [info] No app update available
+[2020-10-13 23:43:16.507] [info] Checking for app update
+[2020-10-13 23:43:16.807] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 291 }
+}
+[2020-10-13 23:43:16.822] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 11 }
+}
+[2020-10-13 23:43:16.823] [info] No app update available
+[2020-10-13 23:44:16.826] [info] Checking for app update
+[2020-10-13 23:44:17.139] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 308 }
+}
+[2020-10-13 23:44:17.155] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 7 }
+}
+[2020-10-13 23:44:17.156] [info] No app update available
+[2020-10-13 23:45:17.158] [info] Checking for app update
+[2020-10-13 23:45:17.511] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 346 }
+}
+[2020-10-13 23:45:17.831] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 317 }
+}
+[2020-10-13 23:45:17.831] [info] No app update available
+[2020-10-13 23:46:17.834] [info] Checking for app update
+[2020-10-13 23:46:18.170] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 333 }
+}
+[2020-10-13 23:46:18.499] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 326 }
+}
+[2020-10-13 23:46:18.500] [info] No app update available
+[2020-10-13 23:46:19.281] [info] Checking for update
+[2020-10-13 23:46:19.531] [error] Error: Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'
+[2020-10-13 23:46:19.533] [info] {
+  level: 'error',
+  from: 'autoUpdater',
+  type: 'unknownAutoUpdaterError',
+  error: [Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'] {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/usr/lib/notion-desktop/resources/app-update.yml'
+  }
+}
+[2020-10-14 02:21:36.295] [info] Checking for update
+[2020-10-14 02:21:36.643] [error] Error: Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'
+[2020-10-14 02:21:36.646] [info] {
+  level: 'error',
+  from: 'autoUpdater',
+  type: 'unknownAutoUpdaterError',
+  error: [Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'] {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/usr/lib/notion-desktop/resources/app-update.yml'
+  }
+}
+[2020-10-14 02:21:36.672] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'loadJson',
+  data: { time: 71 }
+}
+[2020-10-14 02:21:36.835] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'verifyCache',
+  data: { time: 163 }
+}
+[2020-10-14 02:21:36.835] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'assetCacheInitialize',
+  data: { time: 235 }
+}
+[2020-10-14 02:21:46.414] [info] Checking for app update
+[2020-10-14 02:21:46.950] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 528 }
+}
+[2020-10-14 02:21:46.968] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 14 }
+}
+[2020-10-14 02:21:46.969] [info] No app update available
+[2020-10-14 02:22:46.983] [info] Checking for app update
+[2020-10-14 02:22:47.446] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 454 }
+}
+[2020-10-14 02:22:47.464] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 14 }
+}
+[2020-10-14 02:22:47.465] [info] No app update available
+[2020-10-14 02:23:47.479] [info] Checking for app update
+[2020-10-14 02:23:48.210] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 724 }
+}
+[2020-10-14 02:23:48.223] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 9 }
+}
+[2020-10-14 02:23:48.224] [info] No app update available
+[2020-10-14 02:24:48.229] [info] Checking for app update
+[2020-10-14 02:24:48.558] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 322 }
+}
+[2020-10-14 02:24:48.573] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 11 }
+}
+[2020-10-14 02:24:48.573] [info] No app update available
+[2020-10-14 02:25:48.587] [info] Checking for app update
+[2020-10-14 02:25:48.991] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 396 }
+}
+[2020-10-14 02:25:49.003] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 8 }
+}
+[2020-10-14 02:25:49.004] [info] No app update available
+[2020-10-14 02:26:49.019] [info] Checking for app update
+[2020-10-14 02:26:59.466] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 10439 }
+}
+[2020-10-14 02:26:59.476] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 8 }
+}
+[2020-10-14 02:26:59.477] [info] No app update available
+[2020-10-14 09:46:38.772] [info] Checking for update
+[2020-10-14 09:46:39.112] [error] Error: Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'
+[2020-10-14 09:46:39.116] [info] {
+  level: 'error',
+  from: 'autoUpdater',
+  type: 'unknownAutoUpdaterError',
+  error: [Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'] {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/usr/lib/notion-desktop/resources/app-update.yml'
+  }
+}
+[2020-10-14 09:46:39.143] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'loadJson',
+  data: { time: 76 }
+}
+[2020-10-14 09:46:39.373] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'verifyCache',
+  data: { time: 230 }
+}
+[2020-10-14 09:46:39.374] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'assetCacheInitialize',
+  data: { time: 307 }
+}
+[2020-10-14 09:46:48.883] [info] Checking for app update
+[2020-10-14 09:46:49.723] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 828 }
+}
+[2020-10-14 09:46:49.923] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 196 }
+}
+[2020-10-14 09:46:49.925] [info] App update available 23.3.22
+[2020-10-14 09:46:50.792] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'assetJson',
+  data: { time: 866 }
+}
+[2020-10-14 09:46:51.623] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'prepare',
+  data: { time: 830 }
+}
+[2020-10-14 09:46:51.624] [info] App update download complete 23.3.22
+[2020-10-14 09:46:51.626] [info] Installing app update 23.3.22
+[2020-10-14 09:46:51.676] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'download',
+  data: { time: 52 }
+}
+[2020-10-14 09:46:51.677] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'checkForUpdatesNow',
+  data: { time: 2794 }
+}
+[2020-10-14 10:06:32.869] [info] Checking for update
+[2020-10-14 10:06:33.215] [error] Error: Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'
+[2020-10-14 10:06:33.218] [info] {
+  level: 'error',
+  from: 'autoUpdater',
+  type: 'unknownAutoUpdaterError',
+  error: [Error: ENOENT: no such file or directory, open '/usr/lib/notion-desktop/resources/app-update.yml'] {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/usr/lib/notion-desktop/resources/app-update.yml'
+  }
+}
+[2020-10-14 10:06:33.239] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'loadJson',
+  data: { time: 114 }
+}
+[2020-10-14 10:06:33.391] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'verifyCache',
+  data: { time: 151 }
+}
+[2020-10-14 10:06:33.391] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'assetCacheInitialize',
+  data: { time: 266 }
+}
+[2020-10-14 10:06:42.933] [info] Checking for app update
+[2020-10-14 10:06:43.439] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 499 }
+}
+[2020-10-14 10:06:43.477] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 28 }
+}
+[2020-10-14 10:06:43.479] [info] No app update available
+[2020-10-14 10:07:43.492] [info] Checking for app update
+[2020-10-14 10:07:43.919] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 421 }
+}
+[2020-10-14 10:07:43.929] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 8 }
+}
+[2020-10-14 10:07:43.930] [info] No app update available
+[2020-10-14 10:08:43.942] [info] Checking for app update
+[2020-10-14 10:08:44.412] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 453 }
+}
+[2020-10-14 10:08:44.427] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 10 }
+}
+[2020-10-14 10:08:44.428] [info] No app update available
+[2020-10-14 10:09:49.397] [info] Checking for app update
+[2020-10-14 10:09:49.790] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 386 }
+}
+[2020-10-14 10:09:50.158] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 363 }
+}
+[2020-10-14 10:09:50.159] [info] No app update available
+[2020-10-14 10:11:01.119] [info] Checking for app update
+[2020-10-14 10:11:01.510] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 375 }
+}
+[2020-10-14 10:11:01.538] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 24 }
+}
+[2020-10-14 10:11:01.539] [info] No app update available
+[2020-10-14 10:12:01.556] [info] Checking for app update
+[2020-10-14 10:12:01.922] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 355 }
+}
+[2020-10-14 10:12:01.937] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 10 }
+}
+[2020-10-14 10:12:01.938] [info] No app update available
+[2020-10-14 10:13:01.956] [info] Checking for app update
+[2020-10-14 10:13:02.270] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 307 }
+}
+[2020-10-14 10:13:02.638] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 364 }
+}
+[2020-10-14 10:13:02.639] [info] No app update available
+[2020-10-14 10:14:18.948] [info] Checking for app update
+[2020-10-14 10:14:19.467] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 510 }
+}
+[2020-10-14 10:14:19.537] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 66 }
+}
+[2020-10-14 10:14:19.544] [info] No app update available
+[2020-10-14 10:15:20.185] [info] Checking for app update
+[2020-10-14 10:15:21.289] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsFetch',
+  data: { time: 1096 }
+}
+[2020-10-14 10:15:21.304] [info] {
+  level: 'info',
+  from: 'assetCache',
+  type: 'updateAssetsResponseParse',
+  data: { time: 11 }
+}
+[2020-10-14 10:15:21.305] [info] No app update available
+[2020-10-14 10:16:31.974] [info] Checking for app update
+[2020-10-14 10:16:32.017] [info] No app update available
+[2020-10-14 10:17:36.705] [info] Checking for app update
+[2020-10-14 10:17:36.755] [info] No app update available

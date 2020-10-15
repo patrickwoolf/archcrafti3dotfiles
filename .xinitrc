@@ -44,6 +44,9 @@ exec i3
 # -R restores the last colorscheme that was in use.
 wal -R
 
+# libinput
+libinput-gesture-setup start
+
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus

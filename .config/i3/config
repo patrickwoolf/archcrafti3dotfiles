@@ -29,6 +29,7 @@ exec --no-startup-id /usr/bin/compton --config $HOME/.compton.conf -b -c --respe
 exec --no-startup-id setxkbmap -layout us
 exec --no-startup-id setxkbmap -option 'grp:alt_shift_toggle'
 exec_always ibus-daemon -drx
+exec_always libinput-gestures-setup restart
 
 # Menu
 bindsym $mod+d exec rofi -theme gruvbox-dark -lines 10 -padding 18 -width 60 -location 0 -show drun -sidebar-mode
